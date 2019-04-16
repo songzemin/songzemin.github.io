@@ -25,13 +25,13 @@
     |空集|空集是任何集合的子集，是任何非空集合的真子集|∅⊆A，∅⫋B|
   * 集合的基本运算
     - 交集
-      * ![这是交集](image/jiaoji.jpg){:height="30" width="30"}
+      * ![这是交集](image/jiaoji.jpg)
       * 符号：`∩`
     - 并集
-      * ![这是并集](image/bingji.jpg){:height="30" width="30"}
+      * ![这是并集](image/bingji.jpg)
       * 符号：`∪`
     - 补集
-      * ![这是补集](image/buji.jpg){:height="30" width="30"}
+      * ![这是补集](image/buji.jpg)
       * 符号：`∁UA`
 ## 必会结论
   1. A∪B=A <=> B⊆A, A∩B=A <=> A⊆B
