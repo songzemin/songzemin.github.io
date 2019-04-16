@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ch-en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 这里是我的缩进实验 -->
+  <div>
+    <ul>
+      <li>
+        <a href="#">
+          <img src="" alt="这里本来是一张图片">
+        </a>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+<!-- 语义化 -->
+<strong>我是strong加粗</strong>
+
+<b>我是b标签加粗</b>
+
+<p style="color:red;">一定要注意什么样的内容用什么样的标签来表达，就是所谓的语义化</p>
+
+<!-- 属性 -->
+<p class="a" id="b" name="c">我有一个class还有一个id还有一个name,说明了每个标签可以接受一个或多个属性</p>
+
+<input type="text" required>
+
+<DIV title="我是一个title" CLASS="a">属性名，标签名都不区分大小写，但是属性值区分大小写</DIV>
+
+<br>
+<input type="text" value="请用tab键来切换焦点，看下tabindex起作用没" tabindex="1">
+<input type="text" tabindex="3">
+<input type="text" tabindex="2">
+
+<div style="margin-top:20px;" contenteditable="true" data-isbt="abc">data-**可以为标签杜撰一个属性。并且我是可编辑的，因为我有一个contenteditable属性</div>
+<!-- 转义html实体 -->
+<p>&quot;</p>
+<p>&nbsp;</p>
+<p>&gt;</p>
+<p>&amp;</p>
+<p>&copy;</p>
+
+<pre>
+  宋 泽  民   牛
+  比！！！ pre标签里的内容不会被更改
+</pre>
+<!-- 默认情况下浏览器忽略文字与文字之间多于一个的空格，换行符会被全部忽略
+    * 当然css可以改变这种行为 -->
+abc <p>
+    <span> abc       def   </span>
+
+
+
+
+    a  <i>  foo bar 
+
+    </i>
+  </p>
+  <pre>
+    这里你输入的空格   是完全不会被更改的，因为在`pre`里边
+  </pre>
+  <p><span>abc def </span> a <i>foo bar</i></p><pre>这里你输入的空格  是完全不会被更改的，因为你在`pre`里边</pre>
+</body>
+
+</html>
