@@ -1,0 +1,96 @@
+# 表单类标签
+  * form标签，下面是各个属性
+    - action 
+      - 表单的提交地址
+    - target
+      - 行为类似a标签的target
+    - method
+      - 表单的提交方式
+        - get
+          - 将表单字段拼成querystring，意思是
+        - post
+          - 学到http再说，千万记得回来找我呀
+    - enctype，编码方式
+      - 在讲到HTTP的时候再谈
+  - input 代表一个输入框
+    - type属性的各项值
+      - text（文本）
+      - password（密码）
+      - checkbox（复选框）
+        - 以name相同分组，name相同的为一组
+        - checked属性，表示默认选中
+      - radio（单选框）
+        -极本上和checkbox属性用法一致
+      - file（选择文件）
+        - 这里要引入一下file类型的input下的几个属性
+          - accept 过滤文件类型，写法“.jpg,.gif,.png”,这里只是为了提升用户体验而加，并不能真正过滤掉指定格式之外的文件，也可以写成`image/*,.md`,只要是图片就可以。
+          - multiple（是否支持多选文件）
+      - hidden
+        - 隐藏的输入域
+        - value设置其值
+        - name设置其名字
+      - 为一下三个值时，都表现为按钮的样式，按钮上的文字需要以value属性来设置
+        - image
+          - 此时需要使用src属性指定图片的地址
+          - 现在基本上不这么用，之所以有这个用法，时以前不用js时想做出漂亮的按钮时，需要这么用
+          - 在html5中，可以在这种标签上给定width跟height，类似img标签相应的属性，src，alt
+        - button 和button按钮渲染出来是一样的
+        - submit 当type为submit的时候会提交表单
+      - reset
+        - 单击时会充值表单为初始状态（清空所有表单内容）
+      - **以下为html5中新增的属性**
+      - number
+        - 输入数字
+        - `e`,`.`,`-`
+        - eg：`-3.14e-8`
+        - step 跳动数值
+      - email
+        - 输入邮件地址
+        - multiple 输入多个电子邮箱，用逗号分隔
+      - range
+        - min 最小值
+        - max 最大值
+        - step 跳动值
+      - date
+        - 选日期
+      - datatime-local 
+        - 日期和时间
+      - time
+        - 时间
+      - url
+        - 输入一个网址
+      - week
+        - 周
+      - month
+        - 月
+      - color
+        - 选一个颜色，会得到一个十六进制表示的颜色
+      - 不能识别的值，会当成text来处理
+    - value
+      - 为按钮形态时设置上面的文字
+      - 为输出框时设置里面的默认内容
+      - 为radio和checkbox时，value的值是选中这一项的时候具体选中的值
+    - disabled
+      - 禁用这个输入域
+    - required
+      - 必填验证
+      - 不填的话无法用**正常手段**触发表单的提交
+    - maxlength
+      - 为文本输入框时设置输入的最大长度
+    - minlength
+      - 同上，但为设置最小长度
+      - 基本上我发现兼容性不太好，不少浏览器没有实现，有点矛盾，不填的时候是空的，也可以通过验证，所以建议与required一块使用
+    - placeholder
+      - 提示性文字，一旦输入内容就会消失
+    - autofocus
+      - 当页面加载完成自动将光标定在该位置，也就是自动获取焦点
+    - tabindex
+      - 按tab键在不同输入域之间跳转的顺序
+      - 会往顺序更大的元素跳
+      - 为-1的话会跳过那个元素
+    - name
+      - 很重要，表单提交的时候，这个域/字段/框/formcontrol的名字
+      - 同时，在radio和checkbox阵列里，那么相同的元素会被分在一组里
+
+      ---
+      今天先到这里，表单知识点内容过多，明天继续
