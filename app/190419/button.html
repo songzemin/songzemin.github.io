@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <fieldset>
+    <legend>这是一部分内容</legend>
+  <!-- button里面可以放其他的标签 -->
+  <!-- button标签默认的属性是submit -->
+  <!-- 可以为submit和reset -->
+  <button>sub<em>mi</em>t</button>
+  
+  
+  
+  <!-- label标签包含一个表单，那么label中点任何地方都相当于点了表单 -->
+  <!-- for属性，匹配某一个表单的id值 -->
+  <!-- label可以和任何表单标签一块使用 -->
+  <label for="input">
+    用户名：
+  </label>
+  <input type="text" id="input">
+  
+  
+  
+  <!-- select元素，下拉选择，与option元素合用,name->value-->
+  <select name="xiala" id="">
+    <option value="" selected hidden>请选择</option>
+    <option value="1" disabled>1</option>
+    <option value="2" >2</option>
+    <option value="3" >3</option>
+  </select>
+  <!-- optgroup用来分组 -->
+  <select name="xiaola" id="">
+    <optgroup label="华北" disabled>
+      <option value="" selected hidden>请选择</option>
+      <option value="1" disabled>1</option>
+      <option value="2" >2</option>
+      <option value="3" >3</option>
+    </optgroup>
+    <optgroup label="华北">
+      <option value="" selected hidden>请选择</option>
+      <option value="1" disabled>1</option>
+      <option value="2" >2</option>
+      <option value="3" >3</option>
+    </optgroup>
+    <optgroup label="华北">
+      <option value="" selected hidden>请选择</option>
+      <option value="1" disabled>1</option>
+      <option value="2" >2</option>
+      <option value="3" >3</option>
+    </optgroup>
+  </select>
+
+
+
+
+  <!-- textarea标签 cols多少列 rows多少行 name 不是用value填值，显示标签里面的值 ，该标签基本很少用-->
+  <textarea name="" id="" cols="10" rows="2"></textarea>
+  </fieldset>
+
+   <!-- filed set 字段组 用来把一组输入域放在一起 用disabled将一组表单标签禁用-->
+   <fieldset disabled>
+    <legend>个人信息</legend>
+    <input type="">
+    <input type="">
+    <input type="">
+   </fieldset>
+   <fieldset>
+      <legend>他人信息</legend>
+      <input type="">
+      <input type="">
+      <input type="">
+     </fieldset>
+
+
+
+</body>
+</html>
