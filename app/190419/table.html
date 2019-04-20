@@ -23,9 +23,9 @@
           <!-- th，用在表头单元格，文字默认居中并加粗，id用于被td元素引用以表示td所属的标题是哪一个 -->
 
           <th id="a">1</th>
-          <th id="b">1</th>
-          <th id="c">1</th>
-          <th id="d">1</th>
+          <th id="b">2</th>
+          <th id="c">3</th>
+          <th id="d">4</th>
         </tr>
       </thead>
       <!--tbody 表格主体，可以有多个 -->
@@ -34,15 +34,15 @@
           <!-- td，表格数据单元格 -->
           <!-- colspan 合并列 -->
           <!-- rowspan 合并行 -->
-          <th id="e">222</th>
+          <th id="e">1</th>
           <!--headers的值可以是多个以空格分隔的th的id的值，用法可能是
           th或td单元格跨行或跨列了,方便读屏软件-->
-          <td colspan="2" headers="b e">222</th>
-          <!-- <td>222</td> -->
-          <td rowspan="2">222</td>
+          <td colspan="2" headers="b e">2</th>
+            <!-- <td>222</td> -->
+          <td rowspan="2">4</td>
         </tr>
         <tr>
-            <th>222</th>
+          <th>1</th>
           <td>
             <!-- 表格嵌套表格 -->
             <table>
@@ -51,20 +51,15 @@
                 <td>22</td>
                 <td>22</td>
               </tr>
-              <tr>
-                <td>22</td>
-                <td>22</td>
-                <td>22</td>
-              </tr>
             </table>
           </td>
-          <td>222</td>
+          <td>3</td>
         </tr>
         <tr>
-          <th>222</th>
-          <td>222</td>
-          <td>222</td>
-          <td>222</td>
+          <th>1</th>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
         </tr>
 
       </tbody>
