@@ -12,19 +12,39 @@
   <p>
     <!-- table标签  thead和tfoot除了更有语义化之外，还有一个好处是在打印的时候每页都会有表头和表尾-->
     <table border="1">
-
+      <!-- 表格标题 -->
       <caption>表头</caption>
+      <!-- 只能有一个，但即使放在tbody后边，也会出现在前边  如果写多个，第一个之后的都会
+      按照tbody处理-->
       <thead>
+        <!-- 表格行 可以直接作为table的子元素，会放入创建的tbody里面，
+        或者作为table，thead，tbody的子元素-->
         <tr>
-          <th>1</th>
-          <th>1</th>
-          <th>1</th>
-          <th>1</th>
+          <!-- th，用在表头单元格，文字默认居中并加粗，id用于被td元素引用以表示td所属的标题是哪一个 -->
+
+          <th id="a">1</th>
+          <th id="b">1</th>
+          <th id="c">1</th>
+          <th id="d">1</th>
         </tr>
       </thead>
+      <!--tbody 表格主体，可以有多个 -->
       <tbody>
         <tr>
+          <!-- td，表格数据单元格 -->
+          <!-- colspan 合并列 -->
+          <!-- rowspan 合并行 -->
+          <th id="e">222</th>
+          <!--headers的值可以是多个以空格分隔的th的id的值，用法可能是
+          th或td单元格跨行或跨列了,方便读屏软件-->
+          <td colspan="2" headers="b e">222</th>
+          <!-- <td>222</td> -->
+          <td rowspan="2">222</td>
+        </tr>
+        <tr>
+            <th>222</th>
           <td>
+            <!-- 表格嵌套表格 -->
             <table>
               <tr>
                 <td>22</td>
@@ -39,11 +59,9 @@
             </table>
           </td>
           <td>222</td>
-          <td>222</td>
-          <td>222</td>
         </tr>
         <tr>
-          <td>222</td>
+          <th>222</th>
           <td>222</td>
           <td>222</td>
           <td>222</td>
