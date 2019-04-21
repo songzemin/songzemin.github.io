@@ -10,6 +10,10 @@
       - '<mate charset="utf-8">'
         + chartset:字符集
     * 页面图标可以用link标签来放置
+    ```html
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      
+    ```
 ## body
   * 想要在页面中被显示出来的内容都放在这个标签里面
   * 如果页面没有html或者body标签,浏览器会自动添加,并将页面内容包含在body里面

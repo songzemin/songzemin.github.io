@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- usemap匹配map的name -->
+  <img usemap="#product-links" src="./img/a.jpg"  alt="">
+  <!-- name属性匹配img的usemap -->
+  <map name="product-links">
+    <!-- area 
+    必须作为map的子元素，
+    属性：
+    href：链接
+    title：提示文字；
+    shape：
+        rect：矩形  -X1,Y1,X2,Y2
+        circle：圆形  -CX,CY,R (圆心x，圆心y，半径r)
+        poly：多边形  -至少六个值，表示一个多边形的若个顶点的坐标 -->
+    <area shape="circle" coords="290,179 100" href="#" target="_blank" title="衣柜">
+    <area shape="rect" coords="16,80,91,152" href="#" target="_blank" title="相框">
+    <area shape="poly" coords="300,345,293,396,367,424,348,378,325,333" target="_blank" href="#" title="熊">
+  </map>
+</body>
+</html>

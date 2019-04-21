@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- 各种属性：
+  src 
+  name 
+    提及a标签的target属性
+      _selef,_blank
+      自定义名字，可以多个a标签的target指向同一个不存在的name
+      ，浏览器会将这些a的链接都在同一个标签中打开，例如加入购物车
+      回顾target属性可以用的标签base ,a ,form ,img + map>area
+      _top,_parent
+      在顶层标签打开，在父窗口打开 
+  webview
+  它的跳转记录也会存在于浏览器的前进后退的记录里面-->
+  <a href="www.baidu.com" target="foo">百度一下</a>
+  <iframe name="foo" src="" frameborder="1"></iframe>
+</body>
+</html>
