@@ -1,0 +1,14 @@
+<!-- 隐式类型转换 -->
+<script>
+  console.log(8 * null);  //0  -->null转成了0
+  console.log(1 + undefined);  //NAN  -->undefined转成NAN
+  console.log("5" - 4); //1  -->字符串转成了数字
+  console.log("5" + 1); //"51"  -->1转成了字符串？ “+”会先尝试字符串拼接，在尝试数值加减
+  console.log("five" * 2);  //NAN  -->字符串被转成了NAN
+  console.log(false == 0);  //true -->false转成了0
+</script>
+<!-- 如果不想发生类型转换的时候用“===”或“!==” -->
+
+
+<!-- 弱类型语言（会自动转换类型）如js，c,java
+强类型语言（不会自动转换类型）如python -->
